@@ -183,7 +183,7 @@ for chan_grp in channel_groups:
         if savedir != None:
             sorted_spikes = pd.DataFrame(SPIKES_clust,index=seg_list)
             sorted_spikes.to_excel('{}/{}_SPIKETIMES_aligned_CLUSTER{}_changrp{}.xlsx'.format(savedir,name,cluster,chan_grp),index_label='Segment')
-            plt.savefig('{}/{}_Spike_times_aligned_CLUSTER{}_changrp{}.pdf'.format(savedir,name,cluster,chan_grp))
+            plt.savefig('{}/{}_Spikes_PSTH_CLUSTER{}_changrp{}.pdf'.format(savedir,name,cluster,chan_grp))
         else : 
             print ('No savedir specified : nothing will be saved')
                         
